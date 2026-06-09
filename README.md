@@ -61,22 +61,22 @@ To replace assets later, add the new file to `assets/` and update the relevant `
 The public contact email is:
 
 ```text
-axiomscholarsprep@gmail.com
+abhi@axiomscholars.com
 ```
 
 The public contact phone number is:
 
 ```text
-240-547-1169
+667-200-9582
 ```
 
 The diagnostic form currently posts to FormSubmit:
 
 ```html
-action="https://formsubmit.co/axiomscholarsprep@gmail.com"
+action="https://formsubmit.co/abhi@axiomscholars.com"
 ```
 
-On submit, FormSubmit sends the request to `axiomscholarsprep@gmail.com`. The first live submission may trigger a FormSubmit confirmation email to that inbox before messages are delivered. GitHub Pages cannot directly submit form data to Gmail in the background without a third-party service or backend.
+On submit, FormSubmit sends the request to `abhi@axiomscholars.com`. The first live submission may trigger a FormSubmit confirmation email to that inbox before messages are delivered. GitHub Pages cannot directly submit form data to Gmail in the background without a third-party service or backend.
 
 Current FormSubmit helper fields:
 

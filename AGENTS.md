@@ -93,6 +93,6 @@ Deploy steps:
 - Update the GitHub Pages URL if the site moves to a custom domain.
 - Add the final intro video or linked video thumbnail.
 - Replace placeholder testimonials with real, permission-approved testimonials.
-- The diagnostic form currently uses FormSubmit at `https://formsubmit.co/axiomscholarsprep@gmail.com`; update that action if switching providers.
+- The diagnostic form currently uses FormSubmit at `https://formsubmit.co/abhi@axiomscholars.com`; update that action if switching providers.
 - Add analytics IDs only after privacy and compliance review.
 - Add real summer course schedules and enrollment links only after they are confirmed.
