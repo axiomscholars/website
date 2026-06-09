@@ -6,6 +6,8 @@ Axiom Scholars is a premium boutique academic coaching website for private STEM 
 
 The site also promotes 8-week Summer Readiness Courses in July and August for High School Physics, AP Physics, and AP Calculus. Algebra 1, Algebra 2, Geometry, and Precalculus should be described only as available upon request unless specific courses are confirmed.
 
+The dedicated summer ads landing page is `summer/`. Keep it focused on summer course conversion rather than turning it into a second homepage.
+
 ## Tech Stack
 
 - Static HTML
@@ -63,6 +65,7 @@ Avoid:
 - No fabricated summer course dates, prices, schedules, enrollment limits, or seat scarcity.
 - Keep the summer section focused on the three flagship courses unless the business confirms additional summer courses.
 - Do not use `bootcamp` as the main summer course language; prefer `Summer Readiness Courses`, `Summer Intensives`, `8-week summer courses`, or `small-group summer intensives`.
+- Describe included support as `3 private support hours`, not as `free hours`.
 - Do not imply affiliation, endorsement, partnership, or sponsorship with the College Board, ACT, Inc., or any other testing organization.
 - Do not use official College Board or ACT logos.
 - Use `SAT/ACT Math preparation` or `standardized test math preparation`.
@@ -72,7 +75,7 @@ Avoid:
 
 The following disclaimer must remain visible in the footer and must be included or clearly referenced anywhere standardized tests, SAT, ACT, or College Board are discussed:
 
-> Axiom Scholars is an independent tutoring and academic coaching service. We are not affiliated with, endorsed by, or sponsored by the College Board, ACT, Inc., or any other testing organization. SAT is a registered trademark of the College Board. ACT is a registered trademark of ACT, Inc.
+> Axiom Scholars is an independent tutoring and academic coaching service. We are not affiliated with, endorsed by, or sponsored by the College Board, ACT, Inc., AP, or any other testing organization. SAT is a registered trademark of the College Board. ACT is a registered trademark of ACT, Inc. AP is a trademark registered by the College Board, which is not affiliated with, and does not endorse, Axiom Scholars.
 
 ## Deployment Notes
 

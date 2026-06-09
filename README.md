@@ -28,6 +28,7 @@ http://localhost:8000
 Primary files:
 
 - `index.html`: page content, SEO metadata, Open Graph tags, JSON-LD, placeholder comments
+- `summer/`: dedicated summer course landing page for Google Ads and Meta Ads traffic
 - `styles.css`: responsive layout, brand styling, mobile sticky CTA
 - `script.js`: mobile navigation and footer year
 
@@ -36,13 +37,19 @@ Search for `TODO:` to replace:
 - Intro video
 - Analytics scripts
 
-The current canonical URL and social URLs point to:
+The homepage canonical URL and social URLs currently point to:
 
 ```text
 https://axiomscholars.github.io/website/
 ```
 
-Update those URLs in `index.html` if the site later moves to a custom domain.
+The summer landing page canonical URL points to:
+
+```text
+https://axiomscholars.com/summer/
+```
+
+Update URLs in `index.html` and `summer/` if the production domain or route changes.
 
 ## Assets Used
 
@@ -126,7 +133,15 @@ Analytics will not collect useful traffic data until the site is publicly deploy
 
 ## Summer Readiness Courses
 
-The homepage includes a `Summer Readiness Courses` section, a top announcement banner, and a matching navigation link. The current summer marketing layer promotes 8-week small-group summer intensives in July and August.
+The site includes both a homepage summer section and a dedicated summer landing page:
+
+```text
+summer/
+```
+
+Use `summer/` for Google Ads and Meta Ads traffic. The homepage top announcement banner and summer CTAs link to this landing page.
+
+The current summer marketing layer promotes 8-week small-group summer intensives in July and August.
 
 Flagship courses:
 
@@ -144,10 +159,18 @@ Additional support listed only as available upon request:
 Current public details:
 
 - Course window: `July 6 - August 28, depending on course`
-- Pricing: `$699 - includes 3 free hours of tutoring`
+- Pricing: `$699 - includes 8 weeks of small-group instruction plus 3 private support hours`
 - `[INSERT ENROLLMENT LINK]`
 
 Discuss exact schedules directly with families on the diagnostic call. Update enrollment links and any future pricing/date changes in `index.html`. Do not invent dates, prices, enrollment limits, seat scarcity, or availability. The current summer CTAs route to the diagnostic form and preselect the summer course interest where appropriate.
+
+On `summer/`, schedule copy currently says:
+
+```text
+Course schedules will be finalized based on student availability.
+```
+
+Update this only when confirmed schedules are ready to publish.
 
 ## GitHub Pages Deployment
 
@@ -172,6 +195,6 @@ GitHub Pages will publish the static site from the repository root.
 
 Required disclaimer:
 
-> Axiom Scholars is an independent tutoring and academic coaching service. We are not affiliated with, endorsed by, or sponsored by the College Board, ACT, Inc., or any other testing organization. SAT is a registered trademark of the College Board. ACT is a registered trademark of ACT, Inc.
+> Axiom Scholars is an independent tutoring and academic coaching service. We are not affiliated with, endorsed by, or sponsored by the College Board, ACT, Inc., AP, or any other testing organization. SAT is a registered trademark of the College Board. ACT is a registered trademark of ACT, Inc. AP is a trademark registered by the College Board, which is not affiliated with, and does not endorse, Axiom Scholars.
 
 The disclaimer appears in the footer and is referenced near standardized test content.

@@ -616,6 +616,71 @@ h3 {
   color: var(--muted);
 }
 
+.summer-landing-hero {
+  min-height: auto;
+  overflow: hidden;
+  padding: 72px 0;
+  background:
+    linear-gradient(rgba(11, 23, 40, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 23, 40, 0.04) 1px, transparent 1px),
+    linear-gradient(135deg, var(--paper), var(--cream));
+  background-size: 48px 48px, 48px 48px, auto;
+}
+
+.landing-hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.55fr);
+  gap: clamp(1.5rem, 4vw, 4.5rem);
+  align-items: center;
+}
+
+.landing-hero-copy h1 {
+  max-width: 760px;
+}
+
+.trust-line {
+  max-width: 640px;
+  margin: 1rem 0 0;
+  color: var(--navy);
+  font-size: 1rem;
+  font-weight: 820;
+}
+
+.landing-detail-card {
+  border: 1px solid rgba(16, 36, 62, 0.14);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(rgba(255, 250, 240, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 250, 240, 0.08) 1px, transparent 1px),
+    var(--navy);
+  background-size: 32px 32px, 32px 32px, auto;
+  box-shadow: var(--shadow);
+  color: var(--warm-white);
+  padding: 1.3rem;
+}
+
+.landing-detail-card h2 {
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+}
+
+.hero-detail-strip {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hero-detail-strip span {
+  border: 1px solid rgba(215, 189, 123, 0.26);
+  border-radius: var(--radius);
+  background: rgba(255, 250, 240, 0.06);
+  padding: 0.72rem 0.78rem;
+  color: rgba(255, 250, 240, 0.9);
+  font-weight: 780;
+  line-height: 1.35;
+}
+
 .video-proof-list {
   display: grid;
   gap: 0.45rem;
@@ -940,6 +1005,10 @@ h3 {
   margin-top: 1rem;
 }
 
+.landing-course-details {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .course-details article {
   border: 1px solid rgba(16, 36, 62, 0.13);
   border-radius: var(--radius);
@@ -1022,6 +1091,31 @@ h3 {
   color: var(--warm-white);
   border-color: rgba(255, 250, 240, 0.28);
   background: rgba(255, 250, 240, 0.07);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.55fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.light-card {
+  background: var(--navy);
+  color: var(--warm-white);
+}
+
+.light-card li {
+  color: rgba(255, 250, 240, 0.82);
+}
+
+.landing-request-note h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.center-cta-row {
+  justify-content: center;
+  margin-top: 1.3rem;
 }
 
 .program-grid {
@@ -1597,9 +1691,11 @@ fieldset.form-field {
   }
 
   .hero-grid,
+  .landing-hero-grid,
   .diagnostic-grid,
   .need-grid,
   .readiness-intro,
+  .support-grid,
   .form-grid,
   .method-layout,
   .about-grid,
@@ -1632,6 +1728,10 @@ fieldset.form-field {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .summer-page .nav-menu {
+    inset: var(--header-height) 0 auto;
   }
 }
 
@@ -1695,6 +1795,10 @@ fieldset.form-field {
     padding-bottom: 56px;
   }
 
+  .summer-landing-hero {
+    padding: 54px 0 58px;
+  }
+
   h1 {
     font-size: clamp(2.2rem, 10.5vw, 3.15rem);
   }
@@ -1739,6 +1843,7 @@ fieldset.form-field {
   .program-grid,
   .course-grid,
   .course-details,
+  .landing-course-details,
   .path-compare,
   .expect-grid,
   .fit-grid,
