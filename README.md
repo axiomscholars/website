@@ -114,14 +114,19 @@ data-interest="Summer Readiness Course"
 
 ## Analytics
 
-Analytics snippets are included as commented placeholders in `index.html`.
+Google Analytics / Google Ads measurement is installed on the homepage and summer landing page with measurement ID:
 
-To enable Google Analytics 4:
+```text
+G-MLTG4ZMLT8
+```
 
-1. Create a GA4 web stream.
-2. Replace both `G-XXXXXXXXXX` placeholders with the real measurement ID.
-3. Uncomment the GA4 block in the `<head>`.
-4. Deploy the site publicly.
+The active Google tag appears in:
+
+- `index.html`
+- `summer.html`
+- `summer/index.html`
+
+After deployment, verify traffic in Google Analytics Realtime and connect the GA4 property to Google Ads if you want ads reporting and conversion tracking.
 
 To enable Meta Pixel later:
 
