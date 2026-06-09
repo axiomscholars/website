@@ -33,9 +33,16 @@ Primary files:
 
 Search for `TODO:` to replace:
 
-- Domain: `[INSERT DOMAIN HERE]`
 - Intro video
 - Analytics scripts
+
+The current canonical URL and social URLs point to:
+
+```text
+https://axiomscholars.github.io/website/
+```
+
+Update those URLs in `index.html` if the site later moves to a custom domain.
 
 ## Assets Used
 
@@ -44,7 +51,7 @@ Search for `TODO:` to replace:
 - Mobile header logo: `assets/logo-emblem-clean.png`, generated from `assets/logo3.png`
 - Favicon/browser tab icon: `assets/logo-emblem-clean.png`
 - Apple touch icon: `assets/logo-emblem-clean.png`
-- Open Graph/social image: `assets/logo-social-clean.png`, generated from `assets/logo2.png` and referenced as `https://[INSERT DOMAIN HERE]/assets/logo-social-clean.png`
+- Open Graph/social image: `assets/logo-social-clean.png`, generated from `assets/logo2.png` and referenced as `https://axiomscholars.github.io/website/assets/logo-social-clean.png`
 - Founder headshot: `assets/headshot-enhanced.png`, generated from `assets/headshot.jpeg` and displayed at a restrained size to avoid stretching the low-resolution source.
 
 To replace assets later, add the new file to `assets/` and update the relevant `src`, `href`, or `content` attribute in `index.html`. Keep image dimensions proportional and avoid stretching logos or the headshot.
@@ -57,13 +64,46 @@ The public contact email is:
 axiomscholarsprep@gmail.com
 ```
 
-The diagnostic form currently uses a static-site `mailto:` fallback:
+The public contact phone number is:
 
-```html
-action="mailto:axiomscholarsprep@gmail.com"
+```text
+240-547-1169
 ```
 
-On submit, the visitor’s email app opens with the form data. GitHub Pages cannot directly submit form data to Gmail in the background. For a smoother production form, replace the form `action` with a provider endpoint from Formspree, Getform, Basin, Tally, Google Forms, Netlify Forms, or a custom backend.
+The diagnostic form currently posts to FormSubmit:
+
+```html
+action="https://formsubmit.co/axiomscholarsprep@gmail.com"
+```
+
+On submit, FormSubmit sends the request to `axiomscholarsprep@gmail.com`. The first live submission may trigger a FormSubmit confirmation email to that inbox before messages are delivered. GitHub Pages cannot directly submit form data to Gmail in the background without a third-party service or backend.
+
+Current FormSubmit helper fields:
+
+- `_subject`: sets the email subject to `New Axiom Scholars diagnostic request`
+- `_template`: sends the submission in table format
+- `_captcha`: disables FormSubmit’s captcha screen
+- `_next`: redirects back to `https://axiomscholars.github.io/website/#diagnostic-form`
+- `_honey`: hidden spam honeypot field
+
+To use another production form provider later, replace the form `action` with a provider endpoint from Formspree, Getform, Basin, Tally, Google Forms, Netlify Forms, or a custom backend.
+
+The diagnostic form fields are intentionally short:
+
+- Parent name
+- Email
+- Student grade
+- Subject / program interest
+- Current challenge
+- Preferred meeting format
+- Course, school, or deadline
+- Optional message
+
+The `Subject / program interest` dropdown includes the flagship summer course options and a general `Summer Readiness Course` option. CTA links can preselect that general option by adding:
+
+```html
+data-interest="Summer Readiness Course"
+```
 
 ## Analytics
 
@@ -84,6 +124,31 @@ To enable Meta Pixel later:
 
 Analytics will not collect useful traffic data until the site is publicly deployed and real tracking IDs are inserted.
 
+## Summer Readiness Courses
+
+The homepage includes a `Summer Readiness Courses` section, a top announcement banner, and a matching navigation link. The current summer marketing layer promotes 8-week small-group summer intensives in July and August.
+
+Flagship courses:
+
+- High School Physics Readiness
+- AP Physics Readiness
+- AP Calculus Readiness
+
+Additional support listed only as available upon request:
+
+- Algebra 1
+- Algebra 2
+- Geometry
+- Precalculus
+
+Current public details:
+
+- Course window: `July 6 - August 28, depending on course`
+- Pricing: `$699 - includes 3 free hours of tutoring`
+- `[INSERT ENROLLMENT LINK]`
+
+Discuss exact schedules directly with families on the diagnostic call. Update enrollment links and any future pricing/date changes in `index.html`. Do not invent dates, prices, enrollment limits, seat scarcity, or availability. The current summer CTAs route to the diagnostic form and preselect the summer course interest where appropriate.
+
 ## GitHub Pages Deployment
 
 1. Commit and push these files to GitHub.
@@ -100,6 +165,7 @@ GitHub Pages will publish the static site from the repository root.
 
 - Do not fabricate testimonials.
 - Do not guarantee score increases or grades.
+- Do not fabricate summer course dates, prices, enrollment limits, or seat scarcity.
 - Do not imply affiliation, endorsement, partnership, or sponsorship with the College Board, ACT, Inc., or any testing organization.
 - Do not use official College Board or ACT logos.
 - Use `SAT/ACT Math preparation` or `standardized test math preparation`, not `official SAT prep` or `official ACT prep`.

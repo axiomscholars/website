@@ -4,6 +4,8 @@
 
 Axiom Scholars is a premium boutique academic coaching website for private STEM coaching, physics tutoring, advanced math support, AP coursework, and standardized test math preparation. The brand serves families in Howard County, Maryland and online students.
 
+The site also promotes 8-week Summer Readiness Courses in July and August for High School Physics, AP Physics, and AP Calculus. Algebra 1, Algebra 2, Geometry, and Precalculus should be described only as available upon request unless specific courses are confirmed.
+
 ## Tech Stack
 
 - Static HTML
@@ -58,6 +60,9 @@ Avoid:
 
 - No fake testimonials.
 - No guaranteed score claims.
+- No fabricated summer course dates, prices, schedules, enrollment limits, or seat scarcity.
+- Keep the summer section focused on the three flagship courses unless the business confirms additional summer courses.
+- Do not use `bootcamp` as the main summer course language; prefer `Summer Readiness Courses`, `Summer Intensives`, `8-week summer courses`, or `small-group summer intensives`.
 - Do not imply affiliation, endorsement, partnership, or sponsorship with the College Board, ACT, Inc., or any other testing organization.
 - Do not use official College Board or ACT logos.
 - Use `SAT/ACT Math preparation` or `standardized test math preparation`.
@@ -85,8 +90,9 @@ Deploy steps:
 
 ## Placeholder Replacement Checklist
 
-- Replace `[INSERT DOMAIN HERE]`.
+- Update the GitHub Pages URL if the site moves to a custom domain.
 - Add the final intro video or linked video thumbnail.
 - Replace placeholder testimonials with real, permission-approved testimonials.
-- Replace the `mailto:` form action with a live form endpoint if browser-based submissions are needed.
+- The diagnostic form currently uses FormSubmit at `https://formsubmit.co/axiomscholarsprep@gmail.com`; update that action if switching providers.
 - Add analytics IDs only after privacy and compliance review.
+- Add real summer course schedules and enrollment links only after they are confirmed.

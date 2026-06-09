@@ -4,6 +4,7 @@
   const year = document.querySelector("[data-year]");
   const formSection = document.querySelector("#diagnostic-form");
   const stickyCta = document.querySelector(".mobile-sticky-cta");
+  const programInterest = document.querySelector("#program-interest");
 
   if (year) {
     year.textContent = new Date().getFullYear();
@@ -23,6 +24,10 @@
 
     document.querySelectorAll('a[href="#diagnostic-form"]').forEach((link) => {
       link.addEventListener("click", () => {
+        const interest = link.getAttribute("data-interest");
+        if (interest && programInterest instanceof HTMLSelectElement) {
+          programInterest.value = interest;
+        }
         stickyCta.classList.add("is-hidden");
         window.setTimeout(updateStickyCta, 450);
       });
