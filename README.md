@@ -34,7 +34,6 @@ Primary files:
 
 Search for `TODO:` to replace:
 
-- Intro video
 - Analytics scripts
 
 The homepage canonical URL and social URLs currently point to:
@@ -60,6 +59,7 @@ Update URLs in `index.html` and `summer/` if the production domain or route chan
 - Apple touch icon: `assets/logo-emblem-clean.png`
 - Open Graph/social image: `assets/logo-social-clean.png`, generated from `assets/logo2.png` and referenced as `https://axiomscholars.github.io/website/assets/logo-social-clean.png`
 - Founder headshot: `assets/headshot-enhanced.png`, generated from `assets/headshot.jpeg` and displayed at a restrained size to avoid stretching the low-resolution source.
+- Hero intro card: static founder credibility card using `assets/logo-emblem-clean.png`. The site intentionally avoids embedding a large video file so GitHub Pages stays fast and easy to deploy.
 
 To replace assets later, add the new file to `assets/` and update the relevant `src`, `href`, or `content` attribute in `index.html`. Keep image dimensions proportional and avoid stretching logos or the headshot.
 

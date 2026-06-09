@@ -94,7 +94,7 @@ Deploy steps:
 ## Placeholder Replacement Checklist
 
 - Update the GitHub Pages URL if the site moves to a custom domain.
-- Add the final intro video or linked video thumbnail.
+- Keep the homepage hero intro as a static founder credibility card unless a lightweight externally hosted video is intentionally added later.
 - Replace placeholder testimonials with real, permission-approved testimonials.
 - The diagnostic form currently uses FormSubmit at `https://formsubmit.co/abhi@axiomscholars.com`; update that action if switching providers.
 - Add analytics IDs only after privacy and compliance review.

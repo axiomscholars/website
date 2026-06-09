@@ -542,18 +542,45 @@ h3 {
   flex-direction: column;
 }
 
-.video-placeholder {
+.intro-card-panel {
   position: relative;
   min-height: 340px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   background:
-    linear-gradient(rgba(255, 250, 240, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 250, 240, 0.08) 1px, transparent 1px),
-    radial-gradient(circle at center, rgba(45, 124, 120, 0.34), transparent 48%),
+    linear-gradient(rgba(255, 250, 240, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 250, 240, 0.07) 1px, transparent 1px),
+    radial-gradient(circle at 68% 22%, rgba(215, 189, 123, 0.22), transparent 28%),
     var(--navy);
-  background-size: 32px 32px, 32px 32px, auto, auto;
+  background-size: 34px 34px, 34px 34px, auto, auto;
   color: var(--warm-white);
+}
+
+.intro-card-mark {
+  display: block;
+  width: clamp(184px, 50%, 224px);
+  height: clamp(184px, 50%, 224px);
+  padding: 0.35rem;
+  border: 1px solid rgba(215, 189, 123, 0.52);
+  border-radius: 50%;
+  background: rgba(255, 250, 240, 0.12);
+  box-shadow: 0 26px 54px rgba(0, 0, 0, 0.28);
+  filter: contrast(1.08) saturate(1.04);
+  object-fit: contain;
+  object-position: center center;
+  opacity: 0.96;
+}
+
+.intro-card-equation {
+  position: absolute;
+  left: 1.15rem;
+  right: 1.15rem;
+  bottom: 1.05rem;
+  color: rgba(255, 250, 240, 0.46);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.82rem;
+  text-align: center;
 }
 
 .play-button {
@@ -1821,8 +1848,18 @@ fieldset.form-field {
     grid-template-columns: 1fr;
   }
 
-  .video-placeholder {
+  .intro-card-panel {
     min-height: 190px;
+  }
+
+  .intro-card-mark {
+    width: 156px;
+    height: 156px;
+    padding: 0.28rem;
+  }
+
+  .intro-card-equation {
+    font-size: 0.72rem;
   }
 
   .hero-card-copy {
